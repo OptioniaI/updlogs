@@ -66,3 +66,5 @@ UICorner_3.Parent = title
 
 UICorner_4.CornerRadius = UDim.new(0.150000006, 0)
 UICorner_4.Parent = main
+wait(5.5)
+UpdateLog:Destroy()
