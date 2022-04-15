@@ -1,0 +1,68 @@
+local UpdateLog = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local scroll = Instance.new("ScrollingFrame")
+local updates = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
+local title = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
+local UICorner_4 = Instance.new("UICorner")
+
+UpdateLog.Name = "UpdateLog"
+UpdateLog.Parent = game.CoreGui
+UpdateLog.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = UpdateLog
+main.Active = true
+main.Visible = true
+main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+main.BorderColor3 = Color3.fromRGB(255, 255, 255)
+main.Position = UDim2.new(0, 1275, 0, 305)
+main.Size = UDim2.new(0, 254, 0, 355)
+
+scroll.Name = "scroll"
+scroll.Parent = main
+scroll.Active = true
+scroll.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+scroll.BorderColor3 = Color3.fromRGB(255, 255, 255)
+scroll.Position = UDim2.new(0, 0, 0.09295775, 0)
+scroll.Size = UDim2.new(0, 254, 0, 322)
+scroll.ScrollBarThickness = 10
+
+updates.Name = "updates"
+updates.Parent = scroll
+updates.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+updates.BackgroundTransparency = 0.500
+updates.Position = UDim2.new(0, 0, 0.00256320555, 0)
+updates.Size = UDim2.new(0, 244, 0, 318)
+updates.Font = Enum.Font.Code
+updates.Text = "+ Swatsika Symbol, Beter Orbit Spawn, Better Kill Command + Faster Kill, Change positions around plr to guard. -- Hidden#4642"
+updates.TextColor3 = Color3.fromRGB(255, 255, 255)
+updates.TextScaled = true
+updates.TextSize = 14.000
+updates.TextWrapped = true
+updates.TextXAlignment = Enum.TextXAlignment.Left
+updates.TextYAlignment = Enum.TextYAlignment.Top
+
+UICorner.CornerRadius = UDim.new(0.275000006, 0)
+UICorner.Parent = updates
+
+UICorner_2.CornerRadius = UDim.new(0.275000006, 0)
+UICorner_2.Parent = scroll
+
+title.Name = "title"
+title.Parent = main
+title.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+title.BorderColor3 = Color3.fromRGB(255, 255, 255)
+title.Size = UDim2.new(0, 254, 0, 33)
+title.Font = Enum.Font.Code
+title.Text = "Update  Logs"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextSize = 25.000
+
+UICorner_3.CornerRadius = UDim.new(0.275000006, 0)
+UICorner_3.Parent = title
+
+UICorner_4.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_4.Parent = main
